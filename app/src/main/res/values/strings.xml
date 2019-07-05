@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NetFlixClone</string>
+    <string name="or">OR</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="register">New here? Sign Up now</string>
+</resources>

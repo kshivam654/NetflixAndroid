@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1A1A1A</color>
+    <color name="colorPrimaryLight">#252424</color>
+    <color name="colorPrimaryDark">#121212</color>
+    <color name="colorAccent">#008489</color>
+
+    <!---App Colors-->
+    <color name="bottom_bar_item_idle">#FEFEFE</color>
+
+    <!---Search bar activeProfile activity -->
+    <color name="search_bar_bg">#FEFEFE</color>
+
+    <!--Colors-->
+    <color name="light_gray">#dbdbdb</color>
+    <color name="gray">#7e7e7e</color>
+    <color name="dark_gray">#696969</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">@android:color/transparent</color>
+
+    <!--Design colors-->
+    <color name="light_green">#78DC96</color>
+    <color name="no_internet_bg">#893124</color>
+
+    <!--Old-->
+    <color name="Grey_400">#cfcfcf</color>
+    <color name="green">#228B22</color>
+
+    <!--custom color-->
+    <color name="red">#FF0000</color>
+
+    <color name="cardBackground">#444444</color>
+    <color name="facebook_color">#3b5998</color>
+    <color name="light_red">#DF1D1D</color>
+    <color name="streamview_red">#A3060F</color>
+</resources>
