@@ -3,10 +3,8 @@ package com.sharma.shivamflix.ui.activity;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
-import com.facebook.FacebookSdk;
 import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;
-import com.facebook.appevents.AppEventsLogger;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -16,7 +14,6 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputLayout;
 
 import android.content.Intent;
@@ -50,11 +47,11 @@ import butterknife.OnClick;
 
 public class LoginActivity extends BaseActivity implements View.OnClickListener {
 
-    @BindView(R.id.ed_email)
+    @BindView(R.id.ed_email2)
     EditText edEmail;
     @BindView(R.id.layout_email)
     TextInputLayout layoutEmail;
-    @BindView(R.id.ed_password)
+    @BindView(R.id.ed_password2)
     EditText edPassword;
     @BindView(R.id.layout_password)
     TextInputLayout layoutPassword;
@@ -92,10 +89,10 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         apiInterface = APIClient.getClient().create(APIInterface.class);
     }
 
-    @OnClick({R.id.submit_btn, R.id.forgot_pass, R.id.join_now, R.id.help, R.id.privacy})
+    @OnClick({R.id.submit_btn2, R.id.forgot_pass, R.id.join_now, R.id.help2, R.id.privacy2, R.id.btn_google_register, R.id.btn_facebook_register})
     public void onViewClicked(View view) {
         switch (view.getId()) {
-            case R.id.help:
+            case R.id.help2:
                 String url = "http://www.google.com";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
@@ -104,20 +101,30 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
             case R.id.forgot_pass:
                 Toast.makeText(this, "forgot button pressed", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.submit_btn:
+            case R.id.submit_btn2:
 //                if (validateFields()) {
 //                    doLoginUser();
 //                }
                 Toast.makeText(this, "Submit button pressed", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.join_now:
-                Toast.makeText(this, "sign in button pressed", Toast.LENGTH_SHORT).show();
+                Intent signUp = new Intent(this, SignUpActivity.class);
+                startActivity(signUp);
+                finish();
                 break;
-            case R.id.privacy:
+            case R.id.privacy2:
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("http://www.youtube.com"));
                 startActivity(intent);
                 break;
+
+            case R.id.btn_google_register:
+                signIn();
+                break;
+
+            case  R.id.btn_facebook_register:
+                facebookSignIn();
+
 
         }
 
@@ -125,7 +132,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
 
     private void facebookSignIn() {
         //do something to do facebook signin
-        LoginButton FBloginButton = findViewById(R.id.btn_facebook_sign);
+        LoginButton FBloginButton = findViewById(R.id.btn_facebook_register);
         //Setting the permission that we need to read
         FBloginButton.setPermissions("public_profile","email", "user_birthday", "user_friends");
         //Registering callback!
@@ -175,11 +182,6 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         });
     }
 
-    private void googleSignIn() {
-
-
-
-    }
 
     @Override
     public void onStart() {
@@ -276,10 +278,10 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
 
     @Override
     public void onClick(View v) {
-        if( v.getId() == R.id.btn_google_sign){
+        if( v.getId() == R.id.btn_google_register){
             signIn();
         }
-        if (v.getId() == R.id.btn_facebook_sign){
+        if (v.getId() == R.id.btn_facebook_register){
             facebookSignIn();
         }
     }

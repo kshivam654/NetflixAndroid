@@ -29,11 +29,11 @@
             app:srcCompat="@drawable/streamview" />
 
         <TextView
-            android:id="@+id/privacy"
+            android:id="@+id/privacy2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/imageView2"
-            android:layout_toLeftOf="@id/help"
+            android:layout_toLeftOf="@id/help2"
             android:layout_marginEnd="19dp"
             android:layout_centerVertical="true"
             android:text="Privacy"
@@ -42,7 +42,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/help"
+            android:id="@+id/help2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/imageView2"
@@ -85,7 +85,7 @@
                     android:layout_weight="2">
 
                     <com.google.android.gms.common.SignInButton
-                        android:id="@+id/btn_google_sign"
+                        android:id="@+id/btn_google_register"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_marginRight="5dp"
@@ -94,7 +94,7 @@
 
 
                     <com.facebook.login.widget.LoginButton
-                        android:id="@+id/btn_facebook_sign"
+                        android:id="@+id/btn_facebook_register"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -130,7 +130,7 @@
                         android:textColorHint="@color/white">
 
                         <EditText
-                            android:id="@+id/ed_email"
+                            android:id="@+id/ed_email2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -157,7 +157,7 @@
                         app:passwordToggleTint="@color/white">
 
                         <EditText
-                            android:id="@+id/ed_password"
+                            android:id="@+id/ed_password2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -172,7 +172,7 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <Button
-                        android:id="@+id/submit_btn"
+                        android:id="@+id/submit_btn2"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_marginTop="20dp"
