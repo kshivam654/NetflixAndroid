@@ -1,6 +1,6 @@
-package com.example.netflixclone.network;
+package com.sharma.shivamflix.network;
 
-import com.example.netflixclone.network.events.APIEvent;
+import com.sharma.shivamflix.network.events.APIEvent;
 
 import org.greenrobot.eventbus.EventBus;
 import org.json.JSONObject;
@@ -17,7 +17,7 @@ import okio.BufferedSource;
 import retrofit2.Retrofit;
 import retrofit2.converter.scalars.ScalarsConverterFactory;
 
-import static com.example.netflixclone.network.APIConstants.*;
+import static com.sharma.shivamflix.network.APIConstants.*;
 public class APIClient {
     public static Retrofit getClient() {
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();

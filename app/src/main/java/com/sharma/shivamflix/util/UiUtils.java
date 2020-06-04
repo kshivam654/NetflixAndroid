@@ -1,10 +1,8 @@
-package com.example.netflixclone.util;
+package com.sharma.shivamflix.util;
 
 import android.app.Dialog;
 import android.content.Context;
 import android.widget.Toast;
-
-import com.example.netflixclone.R;
 
 public class UiUtils {
 

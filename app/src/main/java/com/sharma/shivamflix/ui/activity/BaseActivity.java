@@ -1,12 +1,12 @@
-package com.example.netflixclone.ui.activity;
+package com.sharma.shivamflix.ui.activity;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.netflixclone.util.sharedpref.PrefKeys;
-import com.example.netflixclone.util.sharedpref.PrefUtils;
+import com.sharma.shivamflix.util.sharedpref.PrefKeys;
+import com.sharma.shivamflix.util.sharedpref.PrefUtils;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 

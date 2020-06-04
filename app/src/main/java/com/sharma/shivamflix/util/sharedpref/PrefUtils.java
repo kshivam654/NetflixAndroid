@@ -1,4 +1,4 @@
-package com.example.netflixclone.util.sharedpref;
+package com.sharma.shivamflix.util.sharedpref;
 
 import android.content.Context;
 import android.content.SharedPreferences;

@@ -1,4 +1,4 @@
-package com.example.netflixclone;
+package com.sharma.shivamflix;
 
 import org.junit.Test;
 

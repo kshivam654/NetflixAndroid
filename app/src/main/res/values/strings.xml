@@ -1,9 +1,17 @@
 <resources>
-    <string name="app_name">NetFlixClone</string>
+    <string name="app_name">ShivamFlix</string>
     <string name="or">OR</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="sign_in">Sign In</string>
     <string name="forgot_password">Forgot password</string>
     <string name="register">New here? Sign Up now</string>
+
+
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">558475014857934</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb558475014857934</string>
+    <string name="facebook_app_id">558475014857934</string>
+    <string name="fb_login_protocol_scheme">fb558475014857934</string>
+
 </resources>

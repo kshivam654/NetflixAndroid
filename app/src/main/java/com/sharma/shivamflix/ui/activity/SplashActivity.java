@@ -1,15 +1,14 @@
-package com.example.netflixclone.ui.activity;
+package com.sharma.shivamflix.ui.activity;
 
 import android.content.Intent;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.example.netflixclone.R;
-import com.example.netflixclone.util.sharedpref.PrefKeys;
-import com.example.netflixclone.util.sharedpref.PrefUtils;
+import com.sharma.shivamflix.R;
+import com.sharma.shivamflix.util.sharedpref.PrefKeys;
+import com.sharma.shivamflix.util.sharedpref.PrefUtils;
 
 public class SplashActivity extends BaseActivity {
     private static final long SPLASH_TIME_MILLIS = 2000;
@@ -25,7 +24,6 @@ public class SplashActivity extends BaseActivity {
             startActivity(splashIntent);
         }
     };
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

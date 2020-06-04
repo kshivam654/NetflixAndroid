@@ -1,9 +1,9 @@
-package com.example.netflixclone.ui.activity;
+package com.sharma.shivamflix.ui.activity;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.example.netflixclone.R;
+import com.sharma.shivamflix.R;
 
 public class MainActivity extends AppCompatActivity {
 

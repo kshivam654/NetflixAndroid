@@ -1,4 +1,4 @@
-package com.example.netflixclone.network;
+package com.sharma.shivamflix.network;
 
 public class APIConstants {
     public static class Params {

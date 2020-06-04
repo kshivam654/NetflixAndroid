@@ -1,4 +1,4 @@
-package com.example.netflixclone.util;
+package com.sharma.shivamflix.util;
 
 import android.text.TextUtils;
 import android.util.Patterns;

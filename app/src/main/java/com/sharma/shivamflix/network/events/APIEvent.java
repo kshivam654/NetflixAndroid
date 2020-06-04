@@ -1,4 +1,4 @@
-package com.example.netflixclone.network.events;
+package com.sharma.shivamflix.network.events;
 
 public class APIEvent {
     private String message;

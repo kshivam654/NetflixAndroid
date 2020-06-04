@@ -1,4 +1,4 @@
-package com.example.netflixclone.util.sharedpref;
+package com.sharma.shivamflix.util.sharedpref;
 
 public class PrefKeys {
     public static final String USER_ID = "id";
